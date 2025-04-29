@@ -9,8 +9,8 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f8fafd;
-    color: #222;
+    background-color: #1a1407;
+    color: #FFD700;
     line-height: 1.6;
 }
 
@@ -22,7 +22,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background: #fff;
+    background-color: #2d210b;
     box-shadow: 0 2px 8px rgba(0,0,0,0.03);
     padding: 1.2rem 0;
     position: sticky;
@@ -52,14 +52,14 @@ nav .container {
 
 .nav-links a {
     text-decoration: none;
-    color: #222;
+    color: #FFD700;
     font-weight: 500;
     transition: color 0.2s;
 }
 
 .nav-links a:hover,
 .nav-links .btn {
-    color: #2563eb;
+    color: #fffbe6;
 }
 
 .nav-links .btn {
@@ -95,8 +95,8 @@ nav .container {
 }
 
 .btn-primary {
-    background: #fff;
-    color: #2563eb;
+    background-color: #FFD700;
+    color: #1a1407;
     padding: 0.8em 2em;
     border: none;
     border-radius: 25px;
@@ -109,8 +109,8 @@ nav .container {
 }
 
 .btn-primary:hover {
-    background: #2563eb;
-    color: #fff;
+    background-color: #FFC300;
+    color: #1a1407;
     border: 1px solid #fff;
 }
 
@@ -204,7 +204,9 @@ section h2 {
 .contact input,
 .contact textarea {
     padding: 0.8em;
-    border: 1px solid #cbd5e1;
+    background-color: #2d210b;
+    color: #FFD700;
+    border: 1px solid #FFD700;
     border-radius: 8px;
     font-size: 1rem;
     resize: none;
@@ -220,7 +222,7 @@ section h2 {
 
 /* Footer */
 footer {
-    background: #2563eb;
+    background-color: #2d210b;
     color: #fff;
     text-align: center;
     padding: 1.5rem 0;
@@ -251,4 +253,12 @@ footer {
     nav .logo {
         font-size: 1.2rem;
     }
+}
+
+h1, h2, h3 {
+    color: #FFC300;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #bfa14a;
 }
