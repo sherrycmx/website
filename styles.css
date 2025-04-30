@@ -103,14 +103,12 @@ nav .container {
 /* Hero Section */
 .hero {
     position: relative;
-    background: linear-gradient(90deg, #f3f4f6 0%, #e0e7ef 100%);
+    background: none;
     color: #222;
     padding: 4rem 0 3rem 0;
     text-align: center;
     overflow: hidden;
 }
-
-
 
 .hero .container {
     position: relative;
@@ -192,7 +190,10 @@ section {
 
 section h2 {
     color: #2563eb;
-    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-align: center;
 }
 
 .pricing-tiers {
