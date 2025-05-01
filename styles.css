@@ -93,11 +93,12 @@ nav .container {
 
 .nav-links a.btn:hover,
 .btn-primary:hover {
-    background: #1d4ed8;
+    background: #FFD700;
 }
 
-.nav-links a:hover {
-    color: #1d4ed8;
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #FFD700;
 }
 
 /* Hero Section */
@@ -264,7 +265,7 @@ footer {
     border-top: 1px solid #e5e7eb;
     text-align: center;
     padding: 1.5rem 0;
-    color: #64748b;
+    color: #000;
     font-size: 0.95rem;
 }
 
