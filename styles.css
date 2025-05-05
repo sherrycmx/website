@@ -12,8 +12,7 @@ body {
     /* fallback background color if image doesn't load */
     background-color: #f8fafc;
     color: #222;
-    /* font-family: 'Segoe UI', 'Roboto', Arial, sans-serif; */
-    font-family: OpenSans, Helvetica, Arial, sans-serif;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     position: relative;
@@ -90,40 +89,45 @@ nav .container {
 .hero {
     position: relative;
     background: none;
-    color: #222;
+    color: #FFF;
     padding: 4rem 0 3rem 0;
     text-align: center;
     overflow: hidden;
+    width: 100vw;
+    min-height: 100vh; /* Make hero fill at least the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero .container {
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    margin-top: 15rem;
-    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     font-weight: 700;
-    color: #FFF;
     text-align: center;
 }
 
 .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 5rem;
-    text-align: right;
-    color: #FFF;
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
 }
 
 /* Products Section */
 .products {
-    background-color: #faf3e9;
+    background-color: rgba(249, 246, 242, 0.8); /* light beige with 30% transparency */
+    padding: 3rem 0;
 }
 
 .products .container {
-    max-width: 900px;
+    max-width: 100vw;   /* Use the full viewport width */
+    width: 100vw;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -138,7 +142,7 @@ nav .container {
 
 .features-list {
     display: flex;
-    gap: 2rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -152,12 +156,12 @@ nav .container {
     padding: 1.5rem;
     flex: 1 1 250px;
     min-width: 250px;
-    max-width: 300px;
-    text-align: center;
+    max-width: 430px;
+    text-align: left;
 }
 
 .feature-item h3 {
-    color: #2563eb;
+    color: #af7723;
     margin-bottom: 0.5rem;
     text-align: center;
 }
@@ -186,6 +190,11 @@ nav .container {
 }
 
 /* Contact Section */
+.contact {
+    background-color: rgba(249, 246, 242, 0.8); /* light beige with 30% transparency */
+    padding: 3rem 0;
+}
+
 .contact .container {
     max-width: 900px;
     margin: 0 auto;
@@ -285,6 +294,42 @@ input::placeholder, textarea::placeholder {
         align-items: center;
     }
     .contact-info {
+        text-align: center;
+    }
+}
+
+/* Add these styles for the about section layout */
+.about-flex {
+    display: flex;
+    align-items: flex-start;   /* Align image and text to the top */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.about-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.about-info {
+    min-width: 220px;
+    text-align: left;
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .about-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-info {
         text-align: center;
     }
 }
