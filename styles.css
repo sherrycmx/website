@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url('assets/pexels-photo-4365414.jpeg') center/cover no-repeat fixed;
+    background: url('assets/IMG_5250.jpg') top/cover no-repeat fixed;
     /* fallback background color if image doesn't load */
     background-color: #f8fafc;
     color: #222;
@@ -25,7 +25,7 @@ body::before {
     width: 100vw;
     height: 100vh;
     background: #fff;
-    opacity: 0.3; /* 30% white overlay for transparency effect */
+    opacity: 0; /* 90% white overlay for transparency effect */
     pointer-events: none;
     z-index: 0;
 }
@@ -90,11 +90,11 @@ nav .container {
     position: relative;
     background: none;
     color: #FFF;
-    padding: 4rem 0 3rem 0;
+    padding: 2rem 0 3rem 0;
     text-align: center;
     overflow: hidden;
     width: 100vw;
-    min-height: 100vh; /* Make hero fill at least the full viewport height */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,16 +107,21 @@ nav .container {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    color: #FFF;
+    font-size: 3rem;
+    margin-bottom: 5rem;
     font-weight: 700;
     text-align: center;
 }
 
 .hero p {
-    font-size: 1.25rem;
-    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: 8%;
+    font-weight: 400;
 }
 
 /* Products Section */
@@ -166,6 +171,14 @@ nav .container {
     text-align: center;
 }
 
+.feature-item p {
+    margin-bottom: 1.5rem;
+}
+
+.feature p:last-child {
+    margin-bottom: 0;
+}
+
 /* About Section */
 .about {
     background-color: #f1f1f1;
@@ -186,7 +199,9 @@ nav .container {
 }
 
 .about p {
-    text-align: center;
+    text-align: justify;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 /* Contact Section */
