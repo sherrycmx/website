@@ -318,18 +318,18 @@ input::placeholder, textarea::placeholder {
     display: flex;
     align-items: flex-start;   /* Align image and text to the top */
     justify-content: flex-start; /* Align items to the left */
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     text-align: left;
 }
 
 .about-img {
     width: 160px;
-    height: 160px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    flex-shrink: 0; /* Prevent image from shrinking */
+    flex-shrink: 0;
 }
 
 .about-info {
