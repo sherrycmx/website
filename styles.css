@@ -12,7 +12,7 @@ body {
     /* fallback background color if image doesn't load */
     background-color: #f8fafc;
     color: #222;
-    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    font-family: 'ADLaM Display', Arial, sans-serif;
     margin: 0;
     padding: 0;
     position: relative;
@@ -107,7 +107,7 @@ nav .container {
 }
 
 .hero h1 {
-    color: #FFF;
+    color: #33387b;
     font-size: 3rem;
     margin-bottom: 5rem;
     font-weight: 700;
@@ -115,12 +115,13 @@ nav .container {
 }
 
 .hero p {
+    color: #33387b;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-align: center;
-    max-width: 700px;
+    max-width: 800px;
     margin-left: auto;
-    margin-right: 8%;
+    margin-right: auto;
     font-weight: 400;
 }
 
@@ -166,7 +167,7 @@ nav .container {
 }
 
 .feature-item h3 {
-    color: #af7723;
+    color: #33387b;
     margin-bottom: 0.5rem;
     text-align: center;
 }
